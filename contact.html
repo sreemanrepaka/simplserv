@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+ 
+  <script>
+  function message(){
+    alert("Submitted successfully!")
+}
+</script>
+    <title>SimplServ.</title>
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>                        
+            </button>
+            <a class="navbar-brand" href="/">SimplServ.</a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="/">FIND A SERVICE</a></li>
+              <li><a href="/about">ABOUT</a></li>
+              <li><a href="/services">SERVICES</a></li>
+
+              <li><a class="active" href="/contact">CONTACT</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <!-- Container (Contact Section) -->
+<div id="contact" class="container-fluid bg-grey">
+    <h2 class="text-center">CONTACT</h2>
+    <div class="row">
+      <div class="text-center" >
+        <p>Contact us and we'll get back to you within 24 hours.</p>
+      </div>
+      
+      <div class="col-sm-3"></div>
+      <div class="col-sm-6">
+        <div class="row">
+        <form action="/contact" method="get" onsubmit="message()">
+          <div class=" form-group">
+            <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+          </div>
+          <div class=" form-group">
+            <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+          </div>
+        </div>
+        <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+        <div class="row">
+          <div class="col-sm-12 form-group text-center">
+            <button class="button" type="submit">Send</button>
+          </div>
+        </div>
+      </form>
+      </div>
+    </div>
+
+    
+    <div class="text-center">
+      <br><br><br>
+    <p><span class="glyphicon glyphicon-map-marker"></span> Pune, India</p>
+        <p><span class="glyphicon glyphicon-phone"></span> +91 112233445</p>
+        <p><span class="glyphicon glyphicon-envelope"></span> contact@simplserv.com</p>
+  </div>
+  <footer>
+    <p>Designed and Developed by Sreeman, Siddharth, Soumyaroop, and Shrijit</p>
+  </footer>
+  
+    
+</body>
+</html>
