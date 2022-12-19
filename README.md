@@ -5,7 +5,9 @@ frontend - html, css, js
 backend - mysql, node
 
 steps: 
-npm init
-npm install
-npm start
+1. npm init
+
+2. npm install
+
+3. npm start
 
